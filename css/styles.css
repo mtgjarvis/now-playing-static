@@ -195,3 +195,26 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .site-nav {
+    margin-left: 16px;
+    display: block;
+    z-index: 1;
+    top: 10px;
+    width: 80px;
+  }
+  .site-nav-list .site-nav-item {
+    display: inline-block;
+    width: 80px;
+  }
+  .site-nav-list {
+    margin-top: 70px;
+  }
+  .site-nav-item {
+    margin-top: 40px;
+  }
+  .movie-overview {
+    display: block;
+  }
+}
