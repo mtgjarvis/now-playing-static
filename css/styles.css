@@ -198,10 +198,10 @@ figure {
 
 @media (min-width: 768px) {
   .site-nav {
-    margin-left: 16px;
+    /* margin-left: 16px; */
     display: block;
     z-index: 1;
-    top: 10px;
+    top: 0;
     width: 80px;
   }
   .site-nav-list .site-nav-item {
@@ -210,17 +210,67 @@ figure {
   }
   .site-nav-list {
     margin-top: 70px;
+    margin-left: 8px;
   }
   .site-nav-item {
     margin-top: 40px;
   }
+
   .movie-overview {
     display: block;
   }
   .movie-title-label,
   .movie-title,
   .movie-overview {
-    margin-left: 120px;
-    width: 90%;
+    margin:0 100px;
   }
+  .site-logo {
+    width: 55px;
+    margin-left: 4px;
+  }
+}
+
+@media (min-width: 992px) {
+main {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 80px;
+}
+
+.movie-overview {
+  display: none;
+}
+
+.movie-backdrop {
+  display: none;
+}
+
+.movie-poster {
+  display: block;
+}
+
+.movie:first-child {
+  grid-column: 1 / 4;
+  display: block;
+}
+
+.movie:first-child .movie-backdrop {
+  display: block;
+}
+
+.movie:first-child .movie-overview {
+  display: block;
+  margin-left: 0;
+}
+
+.movie:first-child .movie-poster {
+  display: none;
+}
+
+.movie-title-label,
+.movie-title {
+  width: 100%;
+  margin-left: 0;
+}
+
 }
