@@ -217,4 +217,10 @@ figure {
   .movie-overview {
     display: block;
   }
+  .movie-title-label,
+  .movie-title,
+  .movie-overview {
+    margin-left: 120px;
+    width: 90%;
+  }
 }
